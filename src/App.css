@@ -54,14 +54,21 @@
 
 select{
   font-size: 7px;
-  padding: .7vh 0;
+  padding: 1vh 0;
   border-radius: 10px;
+  width: fit-content;
 
 
 }
-
+.drop{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 .showing{
   margin-right: 300px;
   font-size: 14px;
 }
+
+
