@@ -15,7 +15,9 @@ const ListOfMutualFundPage = () => {
       </div>
 
       <div className="mt-10 mr-[200px]  text-xs">
-        <h3>Home{'>'}Mutual Fund{'>'}List of Mutual Funds</h3>
+        <h3>
+          Home{">"}Mutual Fund{">"}List of Mutual Funds
+        </h3>
       </div>
 
       <div className="mt-10 flex gap-5 drop">
@@ -29,25 +31,23 @@ const ListOfMutualFundPage = () => {
         <h2>Showing : 20 resuls</h2>
       </div>
 
-      
-
       <div className="mt-10 mb-4 ">
         <ListCard />
-        </div>
-        <div className="mt-5 mb-4">
+      </div>
+      <div className="mt-5 mb-4">
         <ListCard />
-        </div>
-        <div className="mt-5 mb-4">
+      </div>
+      <div className="mt-5 mb-4">
         <ListCard />
-        </div>
-        <div className="mt-5 mb-4">
+      </div>
+      <div className="mt-5 mb-4">
         <ListCard />
-        </div>
-        <div className="mt-5 mb-4">
+      </div>
+      <div className="mt-5 mb-4">
         <ListCard />
-        </div>
-        
+      </div>
 
+      {/* given error or scrollbar */}
 
       {/* <Footer/> */}
     </div>
