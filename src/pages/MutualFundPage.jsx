@@ -2,6 +2,7 @@ import React from "react";
 import Card from "../components/Card";
 import Button from "../components/Button";
 import SearchComponent from "../components/SearchBar";
+import img from "../assets/image 57.svg";
 
 function MutualFundPage() {
   return (
@@ -55,11 +56,7 @@ function MutualFundPage() {
             "w-3/5 h-1/5 bg-white rounded-[15px] shadow-lg p-4 flex flex-col justify-center  items-center mt-4 mb-4 self-center border-transparent"
           }
         >
-          <img
-            className="object-center w-20 h-20"
-            src="./src/assets/image 57.svg"
-            alt=""
-          />
+          <img className="object-center w-20 h-20" src={img} alt="" />
         </div>
       </div>
       <div className="mt-1 text-[#000000] text-sm flex justify-center text-center font-montserrat font-semibold">

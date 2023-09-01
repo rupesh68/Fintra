@@ -1,4 +1,13 @@
 import React from "react";
+import img1 from "../assets/image_1.svg";
+import linkedIn from "../assets/linkedin.svg";
+import insta from "../assets/insta.svg";
+import twitter from "../assets/twitter.svg";
+import messenger from "../assets/messenger.svg";
+import youtube from "../assets/youtube.svg";
+import gplay from "../assets/gplay.png";
+import apple from "../assets/appstore.png";
+import heart from "../assets/heart.svg";
 
 function Footer() {
   return (
@@ -6,11 +15,7 @@ function Footer() {
       <div className="flex">
         <div className="flex-col flex-1 place-content-evenly">
           <div className="inline-flex mt-4 ml-4 gap-4">
-            <img
-              className="w-8 h-8 rounded-full"
-              src="./src/assets/image_1.svg"
-              alt=""
-            />
+            <img className="w-8 h-8 rounded-full" src={img1} alt="" />
             <div className="text-cyan-500 text-[18px] font-bold font-montserrat ">
               Fintra
             </div>
@@ -20,11 +25,11 @@ function Footer() {
             Number,2, Kakatiya Hills, Madhapur, Telangana - 500033
           </div>
           <div className="flex flex-row gap-3  m-4">
-            <img className="w-4 h-4" src="./src/assets/linkedin.svg" alt="" />
-            <img className="w-4 h-4" src="./src/assets/insta.svg" alt="" />
-            <img className="w-4 h-4" src="./src/assets/twitter.svg" alt="" />
-            <img className="w-4 h-4" src="./src/assets/messenger.svg" alt="" />
-            <img className="w-4 h-4" src="./src/assets/youtube.svg" alt="" />
+            <img className="w-4 h-4" src={linkedIn} alt="" />
+            <img className="w-4 h-4" src={insta} alt="" />
+            <img className="w-4 h-4" src={twitter} alt="" />
+            <img className="w-4 h-4" src={messenger} alt="" />
+            <img className="w-4 h-4" src={youtube} alt="" />
           </div>
         </div>
 
@@ -42,8 +47,8 @@ function Footer() {
           </div>
 
           <div className="flex">
-            <img className="" src="./src/assets/gplay.png" alt="" />
-            <img className="" src="./src/assets/appstore.png" alt="" />
+            <img className="" src={gplay} alt="" />
+            <img className="" src={apple} alt="" />
           </div>
         </div>
       </div>
@@ -61,10 +66,7 @@ function Footer() {
           <div className="font-medium text-sm font-montserrat">
             Crafted with
           </div>
-          <img
-            className="object-center w-4 h-4 ml-2 mr-2"
-            src="./src/assets/heart.svg"
-          />
+          <img className="object-center w-4 h-4 ml-2 mr-2" src={heart} />
           <div className="font-medium text-sm font-montserrat">in India</div>
         </div>
       </div>
