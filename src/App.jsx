@@ -5,10 +5,32 @@ import HomePage from "./pages/HomePage";
 import CalculatorPage from "./pages/CalculatorPage";
 import { Routes, Route } from "react-router-dom";
 import MutualFundPage from "./pages/MutualFundPage";
+import React from "react";
+import ListOfMutualFundPage from "./pages/ListOfMutualFundPage";
+import DropDown from "./components/DropDown";
+import ListCard from "./components/ListCard";
+
 import SipCalculator from "./pages/SipCalculatorPage";
 
-export default function App() {
+// export default function App() {
+//   return (
+//     <div className="App bg-white  h-full w-full flex-col ">
+//       <Navbar />
+//       <Routes>
+//         <Route path="/" element={<HomePage />} />
+//         <Route path="/calc" element={<CalculatorPage />} />
+//         <Route path="/mutualFund" element={<MutualFundPage />} />
+//       </Routes>
+//       <Footer />
+//     </div>
+//   );
+// }
+
+
+
+const App = () => {
   return (
+
     <div className="App bg-white  h-full w-full flex-col ">
       <Navbar />
       <Routes>
@@ -18,6 +40,7 @@ export default function App() {
         <Route path="/sipCalc" element={<SipCalculator />} />
       </Routes>
       <Footer />
-    </div>
   );
-}
+};
+
+export default App;
