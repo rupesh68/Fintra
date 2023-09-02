@@ -1,7 +1,7 @@
 import React from "react";
 import img95 from "../assets/image 95.png";
 
-import "../Style/global.css";
+// import "../Style/global.css";
 
 const ListCard = () => {
   return (

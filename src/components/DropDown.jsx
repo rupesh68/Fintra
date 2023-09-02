@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "../App.css";
-import "../Style/global.css";
+// import "../Style/global.css";
 
 const DropDown = (props) => {
   const [values, setValues] = useState([]);
