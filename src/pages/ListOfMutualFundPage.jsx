@@ -14,7 +14,7 @@ const ListOfMutualFundPage = () => {
         <h1 className="">Mutual Fund</h1>
       </div>
 
-      <div className="mt-10 mr-[200px]  text-xs">
+      <div className="mt-10 mr-[352px]  text-xs">
         <h3>
           Home{">"}Mutual Fund{">"}List of Mutual Funds
         </h3>

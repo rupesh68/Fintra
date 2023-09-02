@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
-import '../App.css'
+import "../App.css";
+import "../Style/global.css";
 
 const DropDown = () => {
   const [values, setValues] = useState([]);
@@ -15,23 +16,19 @@ const DropDown = () => {
 
   console.log(values, "values");
   return (
-    <div className='drop'>
-    <div className=" flex" >
-      <select
-        onChange={(e) => setOptions(e.target.value)}
-        className="  small">
-        {values.map((opts, i) => (
-          
-          <option key={i} className="text-center">
-            {opts.name}
-          </option>
-        ))}
-      </select>
+    <div className="drop">
+      <div className=" flex ">
+        <select onChange={(e) => setOptions(e.target.value)} className=" small">
+          {values.map((opts, i) => (
+            <option key={i} className="text-center">
+              {opts.name}
+            </option>
+          ))}
+        </select>
 
-      {/* // add some api endpoints  */}
-      {/* <h1 className="text-black">{options} </h1> */}
-    </div>
-
+        {/* // add some api endpoints  */}
+        {/* <h1 className="text-black">{options} </h1> */}
+      </div>
     </div>
   );
 };

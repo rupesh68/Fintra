@@ -1,6 +1,7 @@
 import React from "react";
 import img95 from "../assets/image 95.png";
 import Button from "./Button";
+import '../Style/global.css';
 
 const ListCard = () => {
   return (
@@ -11,7 +12,7 @@ const ListCard = () => {
 
       <div className="flex flex-col">
         <div className="">
-          <h3 className="text-black mr-14 ">
+          <h3 className="text-black mr-32 ">
             Axis Small Cap Fund Direct Growth
           </h3>
         </div>
@@ -31,9 +32,10 @@ const ListCard = () => {
           <h4>25.73% |</h4>
           <h4>AUM Rs. 14252 Cr.</h4>
         </div>
-        <div className="flex justify-end gap-3 mt-12 mx-42">
-          <Button name="Apply Now" />
-          <Button name="Add to Compare" />
+        <div className="flex justify-end gap-2 mt-12 mx-8">
+          {/* <Button name="Apply Now" /> */}
+          <button className="h-fit w-fit py-1 text-center rounded-[10px] text-white   bg-[#00C6CAB8]  w-32 listcard-btn-1">Apply Now</button>
+          <button className="h-fit w-fit  py-1 text-center rounded-[10px] text-[#00C6CAB8]   bg-white border-[#00C6CAB8]  w-44 listcard-btn-2">Add to Compare</button>
         </div>
       </div>
     </div>
