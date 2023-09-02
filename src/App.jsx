@@ -10,6 +10,8 @@ import ListOfMutualFundPage from "./pages/ListOfMutualFundPage";
 import DropDown from "./components/DropDown";
 import ListCard from "./components/ListCard";
 
+import SipCalculator from "./pages/SipCalculatorPage";
+
 // export default function App() {
 //   return (
 //     <div className="App bg-white  h-full w-full flex-col ">
@@ -28,11 +30,16 @@ import ListCard from "./components/ListCard";
 
 const App = () => {
   return (
-    <div>
-      <ListOfMutualFundPage/>
-      {/* <DropDown/> */}
-      {/* <ListCard /> */}
-    </div>
+
+    <div className="App bg-white  h-full w-full flex-col ">
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/calc" element={<CalculatorPage />} />
+        <Route path="/mutualFund" element={<MutualFundPage />} />
+        <Route path="/sipCalc" element={<SipCalculator />} />
+      </Routes>
+      <Footer />
   );
 };
 
