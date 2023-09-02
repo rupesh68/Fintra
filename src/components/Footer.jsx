@@ -12,7 +12,7 @@ import copyRight from "../assets/ic_baseline-copyright.svg";
 
 function Footer() {
   return (
-    <div className="flex-col bottom-0 h-fit   rounded-tl-[15px] rounded-tr-[15px] bg-black bg-opacity-75">
+    <div className="flex-col bottom-0 h-fit rounded-tl-[15px] rounded-tr-[15px] bg-black bg-opacity-75">
       <div className="flex">
         <div className="flex-col flex-1 place-content-evenly">
           <div className="inline-flex mt-4 ml-4 gap-4">
@@ -34,7 +34,7 @@ function Footer() {
           </div>
         </div>
 
-        <div className="flex-col flex-1  gap-2 mt-4">
+        <div className="flex-col flex-1   gap-2 mt-4">
           <div className="inline-flex flex-col ml-4 mb-4">
             <div className="font-medium text-xs font-montserrat">About</div>
             <div className="font-medium text-xs font-montserrat">Blog</div>
@@ -58,7 +58,7 @@ function Footer() {
         <div className="w-screen  border border-black border-opacity-40 mt-1"></div>
         <div className="ml-8 mt-4 mb-4 mr-8 justify-start flex place-content-center items-center">
           <img className="object-center w-4 h-4 mr-2" src={copyRight} />
-          <div className="font-medium text-lg mr-2 font-montserrat ">
+          <div className="font-medium text-lg mr-2 font-montserrat">
             Fintra 2023
           </div>
           <div className="font-medium text-sm font-montserrat">
