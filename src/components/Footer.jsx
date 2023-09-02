@@ -8,6 +8,7 @@ import youtube from "../assets/youtube.svg";
 import gplay from "../assets/gplay.png";
 import apple from "../assets/appstore.png";
 import heart from "../assets/heart.svg";
+import copyRight from "../assets/ic_baseline-copyright.svg";
 
 function Footer() {
   return (
@@ -33,7 +34,7 @@ function Footer() {
           </div>
         </div>
 
-        <div className="flex-col flex-1   gap-2 mt-4">
+        <div className="flex-col flex-1  gap-2 mt-4">
           <div className="inline-flex flex-col ml-4 mb-4">
             <div className="font-medium text-xs font-montserrat">About</div>
             <div className="font-medium text-xs font-montserrat">Blog</div>
@@ -56,11 +57,8 @@ function Footer() {
       <div className="flex-col flex-1">
         <div className="w-screen  border border-black border-opacity-40 mt-1"></div>
         <div className="ml-8 mt-4 mb-4 mr-8 justify-start flex place-content-center items-center">
-          <img
-            className="object-center w-4 h-4 mr-2"
-            src="./src/assets/ic_baseline-copyright.svg"
-          />
-          <div className="font-medium text-lg mr-2 font-montserrat">
+          <img className="object-center w-4 h-4 mr-2" src={copyRight} />
+          <div className="font-medium text-lg mr-2 font-montserrat ">
             Fintra 2023
           </div>
           <div className="font-medium text-sm font-montserrat">

@@ -20,7 +20,6 @@ function SipCalculator() {
       <div className="bg-gray-400 flex justify-center mx-12 my-2 h-36 font-montserrat text-center items-center">
         Advertisement
       </div>
-      //horizontal ruler
       <div className="flex justify-center">
         <hr className="w-full bg-black m-2" />
       </div>
