@@ -28,19 +28,33 @@ import SipCalculator from "./pages/SipCalculatorPage";
 
 
 
+// const App = () => {
+//   return (
+
+//     <div className="App bg-white  h-full w-full flex-col ">
+//       <Navbar />
+//       <Routes>
+//         <Route path="/" element={<HomePage />} />
+//         <Route path="/calc" element={<CalculatorPage />} />
+//         <Route path="/mutualFund" element={<MutualFundPage />} />
+//         <Route path="/sipCalc" element={<SipCalculator />} />
+//       </Routes>
+//       <Footer />
+//   );
+// };
+
+// export default App;
+
+
+
+
 const App = () => {
   return (
+    <div>
+      <ListOfMutualFundPage/>
+      
+    </div>
+  )
+}
 
-    <div className="App bg-white  h-full w-full flex-col ">
-      <Navbar />
-      <Routes>
-        <Route path="/" element={<HomePage />} />
-        <Route path="/calc" element={<CalculatorPage />} />
-        <Route path="/mutualFund" element={<MutualFundPage />} />
-        <Route path="/sipCalc" element={<SipCalculator />} />
-      </Routes>
-      <Footer />
-  );
-};
-
-export default App;
+export default App

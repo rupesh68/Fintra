@@ -1,6 +1,6 @@
 import React from "react";
 import img1 from "../assets/image_1.svg";
-import search from "../assets/Vector.svg";
+
 import drawer from "../assets/Vector1.svg";
 import SearchComponent from "./SearchBar";
 
@@ -21,6 +21,8 @@ const NavbarSearch = () => {
       <div className="flex flex-row  justify-between  gap-6">
         {/* <img className="w-8 h-8" src={search} alt="" /> */}
         <SearchComponent/>
+        
+
         <img className="w-8 h-8" src={drawer} alt="" />
       </div>
     </nav>

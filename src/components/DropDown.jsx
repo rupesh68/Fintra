@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import "../App.css";
 import "../Style/global.css";
 
-const DropDown = () => {
+const DropDown = (props) => {
   const [values, setValues] = useState([]);
   const [options, setOptions] = useState();
 
@@ -16,12 +16,15 @@ const DropDown = () => {
 
   console.log(values, "values");
   return (
-    <div className="drop">
+    <div className="w-[100%] flex justify-center items-center ">
       <div className=" flex ">
-        <select onChange={(e) => setOptions(e.target.value)} className=" small">
+        <select
+          onChange={(e) => setOptions(e.target.value)}
+          className="bg-white border-[#000] border-none shadow-2xl h-16 w-28 rounded-[50px] text-xl font-bold small"
+        >
           {values.map((opts, i) => (
             <option key={i} className="text-center">
-              {opts.name}
+              {props.name}
             </option>
           ))}
         </select>
