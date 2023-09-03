@@ -5,12 +5,11 @@ import HomePage from "./pages/HomePage";
 import CalculatorPage from "./pages/CalculatorPage";
 import { Routes, Route } from "react-router-dom";
 import MutualFundPage from "./pages/MutualFundPage";
-import React from "react";
+import React, { useState, useEffect } from "react";
 import ListOfMutualFundPage from "./pages/ListOfMutualFundPage";
-import DropDown from "./components/DropDown";
-import ListCard from "./components/ListCard";
 
 import SipCalculator from "./pages/SipCalculatorPage";
+import PostPage from "./pages/PostPage";
 
 // export default function App() {
 //   return (
@@ -27,15 +26,38 @@ import SipCalculator from "./pages/SipCalculatorPage";
 // }
 
 const App = () => {
+  const [posts, setPosts] = useState([]);
+  useEffect(() => {
+    console.log("test");
+    fetch("https://fintra.co.in/english?debug=true")
+      .then((response) => response.json())
+      .then((data) => {
+        console.log(data["navigation"]);
+        setPosts(data["navigation"]);
+        console.log(posts[0].id);
+      })
+      .catch((err) => {
+        console.log(err.message);
+      });
+  }, []);
+
   return (
     <div className="App bg-white  h-full w-full flex-col ">
       <Navbar />
+
       <Routes>
-        <Route path="/" element={<HomePage />} />
+        {/* <Route path="/" element={<HomePage />} />
         <Route path="/calc" element={<CalculatorPage />} />
         <Route path="/mutualFund" element={<MutualFundPage />} />
         <Route path="/sipCalc" element={<SipCalculator />} />
-        <Route path="/listMf" element={<ListOfMutualFundPage />} />
+        <Route path="/listMf" element={<ListOfMutualFundPage />} /> */}
+        {posts.map((item, index) => (
+          <Route
+            key={index}
+            path={item.href}
+            element={<PostPage post={item} />}
+          />
+        ))}
       </Routes>
       <Footer />
     </div>

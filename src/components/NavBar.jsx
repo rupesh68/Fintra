@@ -1,13 +1,25 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import img1 from "../assets/image_1.svg";
 import search from "../assets/Vector.svg";
 import drawer from "../assets/Vector1.svg";
-import { DrawerWithNavigation } from "./Drawer";
-
 import { useNavigate } from "react-router-dom";
 
 function Navbar() {
   const [open, setOpen] = React.useState(false);
+  const [posts, setPosts] = useState([]);
+  useEffect(() => {
+    console.log("test");
+    fetch("https://fintra.co.in/english?debug=true")
+      .then((response) => response.json())
+      .then((data) => {
+        console.log(data["navigation"]);
+        setPosts(data["navigation"]);
+        console.log(posts[0]);
+      })
+      .catch((err) => {
+        console.log(err.message);
+      });
+  }, []);
 
   const openDrawer = () => setOpen(true);
   const closeDrawer = () => setOpen(false);
@@ -38,7 +50,19 @@ function Navbar() {
           </div>
         </nav>
         <div className="w-full text-black flex justify-center font-montserrat flex-col mr-4 border-2">
-          <div
+          {posts.map((post) => (
+            <div
+              className="flex p-2 justify-center hover:cursor-pointer hover:text-[#00C6CA]"
+              onClick={() => {
+                navigate(post.href, { replace: true });
+                closeDrawer();
+              }}
+            >
+              {post.caption}
+            </div>
+          ))}
+
+          {/* <div
             className="flex p-2 justify-center hover:cursor-pointer hover:text-[#00C6CA]"
             onClick={() => {
               navigate("/", { replace: true });
@@ -82,7 +106,7 @@ function Navbar() {
             }}
           >
             List of Mutual Funds
-          </div>
+          </div> */}
         </div>
       </div>
     );
