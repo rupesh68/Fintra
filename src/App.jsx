@@ -46,11 +46,8 @@ const App = () => {
       <Navbar />
 
       <Routes>
-        {/* <Route path="/" element={<HomePage />} />
-        <Route path="/calc" element={<CalculatorPage />} />
-        <Route path="/mutualFund" element={<MutualFundPage />} />
-        <Route path="/sipCalc" element={<SipCalculator />} />
-        <Route path="/listMf" element={<ListOfMutualFundPage />} /> */}
+        <Route path="/" element={<HomePage />} />
+        <Route path="sipCalc" element={<SipCalculator />} />
         {posts.map((item, index) => (
           <Route
             key={index}

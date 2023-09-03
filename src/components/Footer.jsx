@@ -5,8 +5,8 @@ import insta from "../assets/insta.svg";
 import twitter from "../assets/twitter.svg";
 import messenger from "../assets/messenger.svg";
 import youtube from "../assets/youtube.svg";
-import gplay from "../assets/gplay.png";
-import apple from "../assets/appstore.png";
+import gplay from "../assets/gplay.svg";
+import apple from "../assets/appstore.svg";
 import heart from "../assets/heart.svg";
 import copyRight from "../assets/ic_baseline-copyright.svg";
 
@@ -48,8 +48,8 @@ function Footer() {
           </div>
 
           <div className="flex">
-            <img className="" src={gplay} alt="" />
-            <img className="" src={apple} alt="" />
+            <img className="h-20" src={gplay} alt="" />
+            <img className="h-20 ml-2" src={apple} alt="" />
           </div>
         </div>
       </div>

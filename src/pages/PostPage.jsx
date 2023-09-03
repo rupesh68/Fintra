@@ -12,7 +12,11 @@ const PostPage = ({ post }) => {
   } else if (post.id === "tools") {
     return <CalculatorPage />;
   } else {
-    return <SipCalculator />;
+    return (
+      <div className="h-screen p-4 justify-center text-center items-center place-content-center text-black font-montserrat">
+        Page Under Development
+      </div>
+    );
   }
 };
 export default PostPage;
