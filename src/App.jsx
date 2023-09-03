@@ -11,6 +11,13 @@ import DropDown from "./components/DropDown";
 import ListCard from "./components/ListCard";
 
 import SipCalculator from "./pages/SipCalculatorPage";
+import IndivdualCreditCard from "./pages/IndivdualCreditCard";
+import StarRating from "./components/StarRating";
+import WelcomeBonus from "./components/WelcomeBonus";
+import AnnualFee from "./components/AnnualFee";
+import AboutComp from "./components/AboutComp";
+import AboutComp2 from "./components/AboutComp2";
+import CreditCard from "./components/CreditCard";
 
 // export default function App() {
 //   return (
@@ -51,7 +58,15 @@ import SipCalculator from "./pages/SipCalculatorPage";
 const App = () => {
   return (
     <div>
-      <ListOfMutualFundPage/>
+      {/* <ListOfMutualFundPage/> */}
+      {/* <IndivdualCreditCard/> */}
+      {/* <StarRating/> */}
+      {/* <WelcomeBonus/> */}
+      {/* <AnnualFee/> */}
+      {/* <AboutComp2/> */}
+
+<CreditCard/>
+
       
     </div>
   )
