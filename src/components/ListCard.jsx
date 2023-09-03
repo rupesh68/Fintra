@@ -5,46 +5,83 @@ import img95 from "../assets/image 95.png";
 
 const ListCard = () => {
   return (
-    <div className=" h-52 w-[100%] flex gap-10 items-center rounded-3xl border border-black">
-      <div className="w-36 h-52   flex items-center justify-center">
-        <img src={img95} alt="" className="w-16 rounded-xl " />
+    <div className=" h-[106px] w-[326px] rounded-[15px] border-solid border-[1px] border-black flex">
+      <div className=" flex items-center px-3 rounded-[15px]">
+        <div className="w-[43px] h-[39px] rounded-[10px] bg-[#FFFFFF] border-solid border-[0.5px] border-[#D9D9D9] flex items-center justify-center ">
+          <img src={img95} alt="" className=" w-[32px] h-[30.48px]" />
+        </div>
       </div>
 
-      <div className="flex flex-col ">
-        <div className="mr-20">
-          <h3 className="text-[#5C5A5A]">Axis Small Cap Fund Direct Growth</h3>
-        </div>
-        <div className="flex gap-3 text-center">
-          <h3 className="bg-[#00C6CAB8] px-2 rounded font-semibold text-xs flex items-center text-white">
-            Small Cap
-          </h3>
-          <h3 className="bg-[#00C6CAB8] px-2 rounded font-semibold text-xs flex items-center text-white">
-            Axix Mutual Fund
+      <div className="rounded-[15px] w-[257px] ">
+        <div className="w-[197px] h-[10px] py-1 ">
+          <h3 className="text-[#5C5A5A] font-montserrat font-medium text-[11px] leading-[13.41px]">
+            Axis Small Cap Fund Direct Growth
           </h3>
         </div>
 
-        <div className="flex text-xs mt-4 ml-4 text-[#5C5A5A] gap-2 mr-10">
-          <h4>Very High Risk | </h4>
-          <h4> Equity | </h4>
-          <h4> 5* | </h4>
-          <div>
-          <h4>25.73% | </h4>
-          <h6 className="text-xs">1Y</h6>
+        <div className="flex gap-2">
+          <div className="w-[42px] h-[9px] rounded-[2px] bg-[#00C6CAB8] mt-2 flex justify-center items-center">
+            <h3 className="w-[26px] h-[6px] font-montserrat font-semibold text-[5px] leading-[6.1px] text-[#ffffff]">
+              Small Cap
+            </h3>
           </div>
 
-          <div>
-          <h4>AUM</h4> <h4>Rs. 14252 Cr.</h4>
+          <div className="w-[56px] h-[9px] rounded-[2px] bg-[#00C6CAB8] mt-2 flex justify-center items-center">
+            <h3 className="w-[46px] h-[6px] font-montserrat font-semibold text-[5px] leading-[6.1px] text-[#ffffff]">
+              Axis Mutual Fund
+            </h3>
           </div>
         </div>
-        <div className="flex justify-center gap-2 mt-12 items-center ml-12">
-          {/* <Button name="Apply Now" /> */}
-          <button className="h-fit w-fit py-1 text-center rounded-[6px] text-white   bg-[#00C6CAB8]   listcard-btn-1 hover:bg-[#ffffff] hover:text-[#00C6CA] hover:border-[00C6CA] flex items-center">
-            Apply Now
-          </button>
 
-          <button className="h-fit w-fit  py-1 text-center rounded-[6px] text-[#00C6CAB8]   bg-white border-[#00C6CAB8]   listcard-btn-2 hover:bg-[#00C6CA] hover:text-[#ffffff] hover:border-[#00C6CA] flex items-center">
-            Add to Compare
-          </button>
+        <div className="mt-2 flex">
+          <div className="w-[64px] h-[10px] ">
+            <p className="text-[#5C5A5A] text-[8px] leading-[9.75px] font-montserrat font-medium">
+              Very High Risk |{" "}
+            </p>
+          </div>
+
+          <div className="w-[33px] h-[10px] ">
+            <p className="text-[#5C5A5A] text-[8px] leading-[9.75px] font-montserrat font-medium">
+              Equity |{" "}
+            </p>
+          </div>
+
+          <div className="w-[27px] h-[10px] ">
+            <p className="text-[#5C5A5A] text-[8px] leading-[9.75px] font-montserrat font-medium">
+              5* |{" "}
+            </p>
+          </div>
+
+          <div className="w-[32px] h-[10px] ">
+            <p className="text-[#5C5A5A] text-[8px] leading-[9.75px] font-montserrat font-medium">
+              25.73% |{" "}
+            </p>
+            <p className="text-[5px]">1Y</p>
+          </div>
+
+          <div className="w-[49px] h-[10px] ">
+            <p className="text-[#5C5A5A] text-[8px] leading-[9.75px] font-montserrat font-medium">
+              AUM
+            </p>
+            <h4 className="text-[#5C5A5A] text-[8px] leading-[9.75px] font-montserrat font-medium">
+              Rs. 14252 Cr.
+            </h4>
+          </div>
+        </div>
+
+        <div className="flex gap-2 mt-8 justify-end px-3">
+          <div className="w-[61px] h-[13px] rounded-[2px] bg-[#00C6CAB8] flex justify-center ">
+            {/* <button className="w-fit] h-[8px] rounded-[2px] bg-[#00C6CAB8] text-[#FFFFFF] font-montserrat font-medium text-[8px]" >  Apply Now</button> */}
+            <p className="w-[45px] h-[8px]  text-[#FFFFFF] font-montserrat font-medium text-[8px]">
+              Apply Now
+            </p>
+          </div>
+          <div className="w-fit h-[13px] rounded-[2px] bg-[#00C6CAB8] flex justify-center ">
+            {/* <button className="w-fit] h-[8px] rounded-[2px] bg-[#00C6CAB8] text-[#FFFFFF] font-montserrat font-medium text-[8px]" >  Apply Now</button> */}
+            <p className="w-[90px] h-[8px]  text-[#FFFFFF] font-montserrat font-medium text-[8px]">
+              Add to Compare
+            </p>
+          </div>
         </div>
       </div>
     </div>

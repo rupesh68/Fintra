@@ -16,22 +16,21 @@ const DropDown = (props) => {
 
   console.log(values, "values");
   return (
-    <div className="w-[100%] flex justify-center items-center ">
-      <div className=" flex ">
-        <select
-          onChange={(e) => setOptions(e.target.value)}
-          className="bg-white border-[#000] border-none shadow-2xl h-16 w-28 rounded-[50px] text-xl font-bold small"
-        >
-          {values.map((opts, i) => (
-            <option key={i} className="text-center">
-              {props.name}
-            </option>
-          ))}
-        </select>
+    <div className="w-[75px] h-[23px] flex justify-center items-center rounded-[15px] bg-[#ffffff] shadow-lg">
+      <select
+        onChange={(e) => setOptions(e.target.value)}
+        className=" w-fit h-[11px] text-[#ffffff] flex justify-center items-center font-montserrat text-[8px] rounded-lg"
+      >
+        {values.map((opts, i) => (
+          <option key={i} className="text-[#ffffff]">
+            {" "}
+            {props.name}
+          </option>
+        ))}
+      </select>
 
-        {/* // add some api endpoints  */}
-        {/* <h1 className="text-black">{options} </h1> */}
-      </div>
+      {/* // add some api endpoints  */}
+      {/* <h1 className="text-black">{options} </h1> */}
     </div>
   );
 };

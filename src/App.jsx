@@ -56,7 +56,7 @@ import FeesAndCharges from "./components/FeesAndCharges";
 const App = () => {
   return (
     <div>
-      {/* <ListOfMutualFundPage/> */}
+      <ListOfMutualFundPage />
       <IndivdualCreditCard />
       {/* <StarRating/> */}
       {/* <WelcomeBonus/> */}

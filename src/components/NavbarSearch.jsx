@@ -8,7 +8,7 @@ import SearchComponent from "./SearchBar";
 
 const NavbarSearch = () => {
   return (
-    <div>
+    <div >
       <nav className=" flex items-center py-5  top-0 z-20 bg-white rounded-t-lg p-4 border border-sky-500 justify-between ">
         <div className="flex flex-row  justify-between  gap-6">
           <img className="w-8 h-8 rounded-full" src={img1} alt="" />
@@ -16,11 +16,11 @@ const NavbarSearch = () => {
             Fintra{" "}
           </div>
         </div>
-        <div className="flex flex-row  justify-between  gap-6">
+        <div className="flex justify-end  items-center gap-2 ">
           {/* <img className="w-8 h-8" src={search} alt="" /> */}
           <SearchComponent />
 
-          <img className="w-8 h-8" src={drawer} alt="" />
+          <img className="w-8 h-8 " src={drawer} alt="" />
         </div>
       </nav>
     </div>
