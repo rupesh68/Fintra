@@ -1,13 +1,12 @@
-import React from 'react';
-import img from '../assets/VectorCheck.svg';
+import React from "react";
 
-const WelcomeBonus = () => {
+const WelcomeBonus = (props) => {
   return (
-    <div className='flex gap-3 items-center'>
-      <img src={img} alt="" />
-      <h5 className='font-montserrat font-semibold'>Welcome Bonus</h5>
+    <div className="flex gap-3 items-center">
+      <img src={props.img} alt="" />
+      <h5 className="font-montserrat font-semibold ">{props.name}</h5>
     </div>
-  )
-}
+  );
+};
 
-export default WelcomeBonus
+export default WelcomeBonus;

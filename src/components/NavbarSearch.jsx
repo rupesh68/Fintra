@@ -6,28 +6,25 @@ import SearchComponent from "./SearchBar";
 
 
 
-// import React from 'react'
-
 const NavbarSearch = () => {
   return (
     <div>
       <nav className=" flex items-center py-5  top-0 z-20 bg-white rounded-t-lg p-4 border border-sky-500 justify-between ">
-      <div className="flex flex-row  justify-between  gap-6">
-        <img className="w-8 h-8 rounded-full" src={img1} alt="" />
-        <div className="text-cyan-500 text-lg font-bold font-montserrat">
-          Fintra{" "}
+        <div className="flex flex-row  justify-between  gap-6">
+          <img className="w-8 h-8 rounded-full" src={img1} alt="" />
+          <div className="text-cyan-500 text-lg font-bold font-montserrat">
+            Fintra{" "}
+          </div>
         </div>
-      </div>
-      <div className="flex flex-row  justify-between  gap-6">
-        {/* <img className="w-8 h-8" src={search} alt="" /> */}
-        <SearchComponent/>
-        
+        <div className="flex flex-row  justify-between  gap-6">
+          {/* <img className="w-8 h-8" src={search} alt="" /> */}
+          <SearchComponent />
 
-        <img className="w-8 h-8" src={drawer} alt="" />
-      </div>
-    </nav>
+          <img className="w-8 h-8" src={drawer} alt="" />
+        </div>
+      </nav>
     </div>
-  )
-}
+  );
+};
 
-export default NavbarSearch
+export default NavbarSearch;

@@ -1,5 +1,5 @@
 import React from "react";
-import img from "../assets/image 125.svg";
+import img from "../assets/image 164.svg";
 import Button from "./Button";
 
 const CreditCard = () => {
@@ -21,11 +21,15 @@ const CreditCard = () => {
             Rs. 500+GST
           </p>
         </div>
-        <div className="flex justify-start mt-2 p-4  bg-red-500">
-          <p className="text-xs text-[#00C6CA] font-semibold">Rewards Rate </p>
-          <div className="flex bg-black ml-16">
-          <p className="text-xs text-[#00C6CA] font-medium">5% cashback at select partner online merchants and 1% cashback</p>
-        </div>
+        <div className="flex justify-start py-4">
+          <p className="text-xs text-[#00C6CA] font-medium w-32">
+            Rewards Rate{" "}
+          </p>
+          <div className="flex  ml-10  w-fit ">
+            <p className="text-xs text-[#5C5A5A] w-[100%] font-medium">
+              5% cashback at select partner online merchants and 1% cashback
+            </p>
+          </div>
         </div>
       </div>
 

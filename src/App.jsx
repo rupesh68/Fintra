@@ -18,6 +18,9 @@ import AnnualFee from "./components/AnnualFee";
 import AboutComp from "./components/AboutComp";
 import AboutComp2 from "./components/AboutComp2";
 import CreditCard from "./components/CreditCard";
+import FeaturesCom from "./components/FeaturesCom";
+import FeaturesInfoComp from "./components/FeaturesInfoComp";
+import FeesAndCharges from "./components/FeesAndCharges";
 
 // export default function App() {
 //   return (
@@ -32,8 +35,6 @@ import CreditCard from "./components/CreditCard";
 //     </div>
 //   );
 // }
-
-
 
 // const App = () => {
 //   return (
@@ -52,24 +53,22 @@ import CreditCard from "./components/CreditCard";
 
 // export default App;
 
-
-
-
 const App = () => {
   return (
     <div>
       {/* <ListOfMutualFundPage/> */}
-      {/* <IndivdualCreditCard/> */}
+      <IndivdualCreditCard />
       {/* <StarRating/> */}
       {/* <WelcomeBonus/> */}
       {/* <AnnualFee/> */}
       {/* <AboutComp2/> */}
 
-<CreditCard/>
-
-      
+      {/* <CreditCard/> */}
+      {/* <FeaturesCom/> */}
+      {/* <FeaturesInfoComp/> */}
+      {/* <FeesAndCharges/> */}
     </div>
-  )
-}
+  );
+};
 
-export default App
+export default App;
