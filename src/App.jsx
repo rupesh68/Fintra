@@ -10,6 +10,9 @@ import ListOfMutualFundPage from "./pages/ListOfMutualFundPage";
 
 import SipCalculator from "./pages/SipCalculatorPage";
 import PostPage from "./pages/PostPage";
+import IndivdualCreditCard from "./pages/IndivdualCreditCard";
+import CreditCard from "./components/CreditCard";
+import ListCard from "./components/ListCard";
 
 // export default function App() {
 //   return (
@@ -25,42 +28,59 @@ import PostPage from "./pages/PostPage";
 //   );
 // }
 
+// const App = () => {
+//   const [posts, setPosts] = useState([]);
+//   useEffect(() => {
+//     console.log("test");
+//     fetch("https://fintra.co.in/english?debug=true")
+//       .then((response) => response.json())
+//       .then((data) => {
+//         console.log(data["navigation"]);
+//         setPosts(data["navigation"]);
+//         console.log(posts[0].id);
+//       })
+//       .catch((err) => {
+//         console.log(err.message);
+//       });
+//   }, []);
+
+//   return (
+//     <div className="App bg-white  h-full w-full flex-col ">
+//       <Navbar />
+
+//       <Routes>
+//         <Route path="/" element={<HomePage />} />
+//         <Route path="sipCalc" element={<SipCalculator />} />
+//         <Route path="mutualFund" element={<ListOfMutualFundPage />} />
+
+//         {posts.map((item, index) => (
+//           <Route
+//             key={index}
+//             path={item.href}
+//             element={<PostPage post={item} />}
+//           />
+//         ))}
+//       </Routes>
+//       <Footer />
+//     </div>
+//   );
+// };
+
+
+
+
 const App = () => {
-  const [posts, setPosts] = useState([]);
-  useEffect(() => {
-    console.log("test");
-    fetch("https://fintra.co.in/english?debug=true")
-      .then((response) => response.json())
-      .then((data) => {
-        console.log(data["navigation"]);
-        setPosts(data["navigation"]);
-        console.log(posts[0].id);
-      })
-      .catch((err) => {
-        console.log(err.message);
-      });
-  }, []);
-
   return (
-    <div className="App bg-white  h-full w-full flex-col ">
-      <Navbar />
+    <div>
+      {/* <ListOfMutualFundPage/> */}
+      {/* <IndivdualCreditCard/> */}
 
-      <Routes>
-        <Route path="/" element={<HomePage />} />
-        <Route path="sipCalc" element={<SipCalculator />} />
-        <Route path="mutualFund" element={<ListOfMutualFundPage />} />
-
-        {posts.map((item, index) => (
-          <Route
-            key={index}
-            path={item.href}
-            element={<PostPage post={item} />}
-          />
-        ))}
-      </Routes>
-      <Footer />
+      {/* <CreditCard/> */}
+      <ListCard/>
     </div>
-  );
-};
+  )
+}
 
-export default App;
+export default App
+
+

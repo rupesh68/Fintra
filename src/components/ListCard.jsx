@@ -1,5 +1,6 @@
 import React from "react";
 import img95 from "../assets/image 95.png";
+import Button from "./Button";
 
 // import "../Style/global.css";
 
@@ -70,18 +71,33 @@ const ListCard = () => {
         </div>
 
         <div className="flex gap-2 mt-8 justify-end px-3">
-          <div className="w-[61px] h-[13px] rounded-[2px] bg-[#00C6CAB8] flex justify-center ">
-            {/* <button className="w-fit] h-[8px] rounded-[2px] bg-[#00C6CAB8] text-[#FFFFFF] font-montserrat font-medium text-[8px]" >  Apply Now</button> */}
-            <p className="w-[45px] h-[8px]  text-[#FFFFFF] font-montserrat font-medium text-[8px]">
-              Apply Now
-            </p>
-          </div>
-          <div className="w-fit h-[13px] rounded-[2px] bg-[#00C6CAB8] flex justify-center ">
-            {/* <button className="w-fit] h-[8px] rounded-[2px] bg-[#00C6CAB8] text-[#FFFFFF] font-montserrat font-medium text-[8px]" >  Apply Now</button> */}
-            <p className="w-[90px] h-[8px]  text-[#FFFFFF] font-montserrat font-medium text-[8px]">
-              Add to Compare
-            </p>
-          </div>
+          <Button
+            name="Apply Now"
+            width="5px"
+            height="h-[13px]"
+            borderradius="rounded-[2px]"
+            bg="bg-[#00C6CAB8]"
+            displayflex="flex"
+            justifycontent="justify-center"
+            alignitems="items-center"
+            textcolor="text-[#ffffff]"
+            textsize="text-[8px]"
+            fontweight="font-medium"
+          />
+
+          <Button
+            name="Add to Compare"
+            width="15px"
+            height="h-[13px]"
+            borderradius="rounded-[2px]"
+            bg="bg-[#00C6CAB8]"
+            displayflex="flex"
+            justifycontent="justify-center"
+            alignitems="items-center"
+            textcolor="text-[#ffffff]"
+            textsize="text-[8px]"
+            fontweight="font-medium"
+          />
         </div>
       </div>
     </div>

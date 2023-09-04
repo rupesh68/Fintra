@@ -7,7 +7,7 @@ import ListCard from "../components/ListCard";
 
 const ListOfMutualFundPage = () => {
   return (
-    <div className=" flex flex-col">
+    <div className=" flex flex-col ">
       <div>{/* <NavbarSearch /> */}</div>
 
       <div className="flex justify-center items-center">
@@ -19,7 +19,7 @@ const ListOfMutualFundPage = () => {
       </div>
 
       <div className="w-[135px]  ml-6 h-[7px] font-normal font-montserrat mt-10 text-[6px] leading-[7.31px]  flex ">
-        <h3>
+        <h3 className="text-black">
           Home{">"}Mutual Fund{">"}List of Mutual Funds
         </h3>
       </div>
@@ -31,12 +31,12 @@ const ListOfMutualFundPage = () => {
         <DropDown name="Large Cap" />
       </div>
 
-      <div className="w-[83px] h-[10px] mt-16 ">
+      <div className="w-[70px] ml-16 h-[10px] mt-16 flex justify-center ">
         <h2 className="text-[#5C5A5A] leading-[9.75px] text-[8px] font-semibold">
           Showing : 20 resuls
         </h2>
       </div>
-
+ 
       <div className="mt-5 mb-4 flex justify-center ">
         <ListCard />
       </div>

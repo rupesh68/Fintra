@@ -12,7 +12,7 @@ import NavbarSearch from "../components/NavbarSearch";
 
 const IndivdualCreditCard = () => {
   return (
-    <div className=" rounded-[10px] flex flex-col justify-center">
+    <div className=" rounded-[10px] flex flex-col justify-cente">
       <div>{/* <NavbarSearch /> */}</div>
 
       <div>
