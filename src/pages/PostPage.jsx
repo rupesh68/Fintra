@@ -3,6 +3,7 @@ import HomePage from "./HomePage";
 import MutualFundPage from "./MutualFundPage";
 import CalculatorPage from "./CalculatorPage";
 import SipCalculator from "./SipCalculatorPage";
+import IndivdualCreditCard from "./IndivdualCreditCard";
 
 const PostPage = ({ post }) => {
   if (post.id === "home") {
@@ -11,6 +12,8 @@ const PostPage = ({ post }) => {
     return <MutualFundPage />;
   } else if (post.id === "tools") {
     return <CalculatorPage />;
+  } else if (post.id === "credit-cards") {
+    return <IndivdualCreditCard />;
   } else {
     return (
       <div className="h-screen p-4 justify-center text-center items-center place-content-center text-black font-montserrat">

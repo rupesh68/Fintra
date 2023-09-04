@@ -19,10 +19,10 @@ const DropDown = (props) => {
     <div className="w-[75px] h-[23px] flex justify-center items-center rounded-[15px] bg-[#ffffff] shadow-lg">
       <select
         onChange={(e) => setOptions(e.target.value)}
-        className=" w-fit h-[11px] text-[#ffffff] flex justify-center items-center font-montserrat text-[8px] rounded-lg"
+        className=" w-fit h-[11px] flex justify-center items-center font-montserrat text-[8px] rounded-lg bg-white text-black"
       >
         {values.map((opts, i) => (
-          <option key={i} className="text-[#ffffff]">
+          <option key={i} className="text-black">
             {" "}
             {props.name}
           </option>

@@ -8,7 +8,7 @@ const StarRating = () => {
   const [rating, setRating] = useState(null);
   const [hover, setHover] = useState(null);
   return (
-    <div className="flex items-center gap-3 ">
+    <div className="flex items-center gap-3 text-black ">
       <div className="flex ">
         {[...Array(5)].map((star, index) => {
           const currentRating = index + 1;

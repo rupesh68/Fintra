@@ -8,11 +8,7 @@ import ListCard from "../components/ListCard";
 const ListOfMutualFundPage = () => {
   return (
     <div className=" flex flex-col">
-
-
-      <div>
-      <NavbarSearch />
-      </div>
+      <div>{/* <NavbarSearch /> */}</div>
 
       <div className="flex justify-center items-center">
         <div className="  flex justify-center mt-10 w-[256px] h-[29px]  items-center ">
@@ -28,41 +24,18 @@ const ListOfMutualFundPage = () => {
         </h3>
       </div>
 
-
-
-
-
-
-
-
-
-
       <div className=" flex justify-evenly mt-10">
-
         <DropDown name="Equity" />
         <DropDown name="Low Risk" />
         <DropDown name="Lumpsump" />
         <DropDown name="Large Cap" />
       </div>
 
-
-
-
-
-
-
-
-
       <div className="w-[83px] h-[10px] mt-16 ">
-        <h2 className="text-[#5C5A5A] leading-[9.75px] text-[8px] font-semibold">Showing : 20 resuls</h2>
+        <h2 className="text-[#5C5A5A] leading-[9.75px] text-[8px] font-semibold">
+          Showing : 20 resuls
+        </h2>
       </div>
-
-
-
-
-
-
-
 
       <div className="mt-5 mb-4 flex justify-center ">
         <ListCard />

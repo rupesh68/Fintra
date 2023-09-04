@@ -1,6 +1,5 @@
 import React from "react";
 
-
 import img3 from "../assets/Vectorplus sign.svg";
 import FeaturesCom from "../components/FeaturesCom";
 import AboutComp2 from "../components/AboutComp2";
@@ -14,9 +13,7 @@ import NavbarSearch from "../components/NavbarSearch";
 const IndivdualCreditCard = () => {
   return (
     <div className=" rounded-[10px] flex flex-col justify-center">
-      <div>
-        <NavbarSearch />
-      </div>
+      <div>{/* <NavbarSearch /> */}</div>
 
       <div>
         <CreditCardHeading />
@@ -48,7 +45,7 @@ const IndivdualCreditCard = () => {
       </div>
 
       <div className="mt-4 flex justify-center">
-        <div className="w-[90vw] h-[100px] rounded-[10px]  border-solid border-[1px] border-black flex p-2 ">
+        <div className="w-[90vw] h-[100px] rounded-[10px]  border-solid border-[1px] border-black flex p-2 text-black ">
           <p>HDFC Bank Regalia Rating & Reviews</p>
         </div>
       </div>

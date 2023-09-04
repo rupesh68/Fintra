@@ -48,6 +48,8 @@ const App = () => {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="sipCalc" element={<SipCalculator />} />
+        <Route path="mutualFund" element={<ListOfMutualFundPage />} />
+
         {posts.map((item, index) => (
           <Route
             key={index}
