@@ -5,7 +5,7 @@ import img2 from "../assets/cancel.svg";
 
 const FeaturesCom = (props) => {
   return (
-    <div className="w-[100vw] h-[100%] rounded-[10px]  border-solid border-[1px] border-black ">
+    <div className="w-[90vw] h-[100%] rounded-[10px]  border-solid border-[1px] border-black ">
       <div className=" w-[229px] h-[15px]  m-2   flex items-center ">
         <p className="leading-[14.63px] font-semibold text-[12px] font-montserrat ">
           Key Features of Regalia Gold Card

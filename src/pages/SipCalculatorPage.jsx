@@ -5,9 +5,11 @@ import ResultComp from "../components/ResultComp";
 import ExploreLinks from "../components/ExploreLinkComp";
 import AboutComp from "../components/AboutComp";
 
+
 function SipCalculator() {
   return (
-    <div className="flex-col h-full w-full">
+    <div className="flex-col h-full w-full ">
+    
       <div className="mt-4 text-[#00000094] text-2xl flex justify-center text-center font-montserrat font-semibold">
         Sip Calculator
       </div>

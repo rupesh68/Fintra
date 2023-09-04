@@ -2,7 +2,7 @@ import React from "react";
 
 const FeesAndCharges = () => {
   return (
-    <div className="border-solid border-[1px] border-[#000000] w-[100vw] h-[100%] rounded-[10px] bg-[#ffffff]">
+    <div className="border-solid border-[1px] border-[#000000] w-[90vw]  h-[100%] rounded-[10px] bg-[#ffffff]">
       <div className="flex m-3 w-fit h-[15px]  flex-col justify-center">
         <p className="font-montserrat font-semibold text-[12px] leading-[14.63px] text-[#000000]">
           Fees And Charges
@@ -12,7 +12,7 @@ const FeesAndCharges = () => {
         </p>
       </div>
 
-      <div className=" grid grid-cols-3 w-[100vw] gap-2  h-[85px]  m-3 ">
+      <div className=" grid grid-cols-3 gap-2  h-[85px]  m-3 ">
         <div className="w-[47px] h-[10px] ">
           <p className="font-medium text-[8px] leading-[9.75px] font-montserra text-[#5C5A5A] flex">
             Joining Fee
@@ -91,7 +91,7 @@ const FeesAndCharges = () => {
           Late Payment Charges
         </p>
 
-        <div className="grid grid-cols-3 w-[100vw] gap-2  h-[85px] ">
+        <div className="grid grid-cols-3  gap-2  h-[85px] ">
           <div className="w-fit h-[10px] ">
             <p className="font-medium text-[8px] leading-[9.75px] font-montserra text-[#5C5A5A] flex ">
               Balance Below 100

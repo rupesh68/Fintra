@@ -2,8 +2,8 @@ import React from "react";
 
 const FeaturesInfoComp = () => {
   return (
-    <div>
-      <div className="border-solid border-[1px] border-[#000000] w-[100%] h-[406px] rounded-[10px] bg-[#ffffff]">
+    
+      <div className="border-solid border-[1px] border-[#000000] w-[90vw] h-[406px] rounded-[10px] bg-[#ffffff]">
         <div className="  w-[102px] h-[15px] m-2 flex items-center ">
           <p className="font-montserrat text-[12px] font-semibold leading-[14.63px] ">
             Welcome Bonus
@@ -35,7 +35,7 @@ const FeaturesInfoComp = () => {
           </p>
         </div>
       </div>
-    </div>
+    
   );
 };
 

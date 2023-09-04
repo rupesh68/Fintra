@@ -7,7 +7,7 @@ import ListCard from "../components/ListCard";
 
 const ListOfMutualFundPage = () => {
   return (
-    <div className="w-[100vw] h-[100%] flex flex-col">
+    <div className=" flex flex-col">
 
 
       <div>
@@ -80,9 +80,9 @@ const ListOfMutualFundPage = () => {
         <ListCard />
       </div>
 
-      <div className="mt-5">
+      {/* <div className="mt-5">
         <Footer />
-      </div>
+      </div> */}
     </div>
   );
 };

@@ -4,7 +4,8 @@ import Button from "./Button";
 
 const CreditCard = () => {
   return (
-    <div className=" h-[100%] w-[328px] rounded-[15px] shadow-xl">
+    <div className="w-[90vw]  rounded-[10px]  flex justify-center ">
+    <div className=" h-[100%] w-[328px]  rounded-[15px] shadow-xl">
       <div className="flex justify-center pt-6 pb-1">
         <img className="w-[220px] h-[142.4px]" src={img} alt="" />
       </div>
@@ -41,6 +42,7 @@ const CreditCard = () => {
           Apply Now
         </button>
       </div>
+    </div>
     </div>
   );
 };

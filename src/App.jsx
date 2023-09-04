@@ -67,6 +67,8 @@ const App = () => {
       {/* <FeaturesCom/> */}
       {/* <FeaturesInfoComp/> */}
       {/* <FeesAndCharges/> */}
+
+      {/* <SipCalculator/> */}
     </div>
   );
 };
