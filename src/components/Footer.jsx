@@ -5,13 +5,14 @@ import insta from "../assets/insta.svg";
 import twitter from "../assets/twitter.svg";
 import messenger from "../assets/messenger.svg";
 import youtube from "../assets/youtube.svg";
-import gplay from "../assets/gplay.png";
-import apple from "../assets/appstore.png";
+import gplay from "../assets/gplay.svg";
+import apple from "../assets/appstore.svg";
 import heart from "../assets/heart.svg";
+import copyRight from "../assets/ic_baseline-copyright.svg";
 
 function Footer() {
   return (
-    <div className="flex-col bottom-0 h-fit   rounded-tl-[15px] rounded-tr-[15px] bg-black bg-opacity-75">
+    <div className="flex-col bottom-0 h-fit rounded-tl-[15px] rounded-tr-[15px] bg-black bg-opacity-75">
       <div className="flex">
         <div className="flex-col flex-1 place-content-evenly">
           <div className="inline-flex mt-4 ml-4 gap-4">
@@ -47,8 +48,8 @@ function Footer() {
           </div>
 
           <div className="flex">
-            <img className="" src={gplay} alt="" />
-            <img className="" src={apple} alt="" />
+            <img className="h-20" src={gplay} alt="" />
+            <img className="h-20 ml-2" src={apple} alt="" />
           </div>
         </div>
       </div>
@@ -56,10 +57,7 @@ function Footer() {
       <div className="flex-col flex-1">
         <div className="w-screen  border border-black border-opacity-40 mt-1"></div>
         <div className="ml-8 mt-4 mb-4 mr-8 justify-start flex place-content-center items-center">
-          <img
-            className="object-center w-4 h-4 mr-2"
-            src="./src/assets/ic_baseline-copyright.svg"
-          />
+          <img className="object-center w-4 h-4 mr-2" src={copyRight} />
           <div className="font-medium text-lg mr-2 font-montserrat">
             Fintra 2023
           </div>

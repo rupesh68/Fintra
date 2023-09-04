@@ -5,22 +5,11 @@ import HomePage from "./pages/HomePage";
 import CalculatorPage from "./pages/CalculatorPage";
 import { Routes, Route } from "react-router-dom";
 import MutualFundPage from "./pages/MutualFundPage";
-import React from "react";
+import React, { useState, useEffect } from "react";
 import ListOfMutualFundPage from "./pages/ListOfMutualFundPage";
-import DropDown from "./components/DropDown";
-import ListCard from "./components/ListCard";
 
 import SipCalculator from "./pages/SipCalculatorPage";
-import IndivdualCreditCard from "./pages/IndivdualCreditCard";
-import StarRating from "./components/StarRating";
-import WelcomeBonus from "./components/WelcomeBonus";
-import AnnualFee from "./components/AnnualFee";
-import AboutComp from "./components/AboutComp";
-import AboutComp2 from "./components/AboutComp2";
-import CreditCard from "./components/CreditCard";
-import FeaturesCom from "./components/FeaturesCom";
-import FeaturesInfoComp from "./components/FeaturesInfoComp";
-import FeesAndCharges from "./components/FeesAndCharges";
+import PostPage from "./pages/PostPage";
 
 // export default function App() {
 //   return (
@@ -36,39 +25,38 @@ import FeesAndCharges from "./components/FeesAndCharges";
 //   );
 // }
 
-// const App = () => {
-//   return (
-
-//     <div className="App bg-white  h-full w-full flex-col ">
-//       <Navbar />
-//       <Routes>
-//         <Route path="/" element={<HomePage />} />
-//         <Route path="/calc" element={<CalculatorPage />} />
-//         <Route path="/mutualFund" element={<MutualFundPage />} />
-//         <Route path="/sipCalc" element={<SipCalculator />} />
-//       </Routes>
-//       <Footer />
-//   );
-// };
-
-// export default App;
-
 const App = () => {
+  const [posts, setPosts] = useState([]);
+  useEffect(() => {
+    console.log("test");
+    fetch("https://fintra.co.in/english?debug=true")
+      .then((response) => response.json())
+      .then((data) => {
+        console.log(data["navigation"]);
+        setPosts(data["navigation"]);
+        console.log(posts[0].id);
+      })
+      .catch((err) => {
+        console.log(err.message);
+      });
+  }, []);
+
   return (
-    <div>
-      <ListOfMutualFundPage />
-      <IndivdualCreditCard />
-      {/* <StarRating/> */}
-      {/* <WelcomeBonus/> */}
-      {/* <AnnualFee/> */}
-      {/* <AboutComp2/> */}
+    <div className="App bg-white  h-full w-full flex-col ">
+      <Navbar />
 
-      {/* <CreditCard/> */}
-      {/* <FeaturesCom/> */}
-      {/* <FeaturesInfoComp/> */}
-      {/* <FeesAndCharges/> */}
-
-      {/* <SipCalculator/> */}
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="sipCalc" element={<SipCalculator />} />
+        {posts.map((item, index) => (
+          <Route
+            key={index}
+            path={item.href}
+            element={<PostPage post={item} />}
+          />
+        ))}
+      </Routes>
+      <Footer />
     </div>
   );
 };
