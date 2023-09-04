@@ -1,12 +1,12 @@
 import React from "react";
-import Navbar from "../components/NavBar";
+
 
 import img3 from "../assets/Vectorplus sign.svg";
 import FeaturesCom from "../components/FeaturesCom";
 import AboutComp2 from "../components/AboutComp2";
 import FeaturesInfoComp from "../components/FeaturesInfoComp";
 import CreditCard from "../components/CreditCard";
-import Footer from "../components/Footer";
+
 import FeesAndCharges from "../components/FeesAndCharges";
 import CreditCardHeading from "../components/CreditCardHeading";
 import NavbarSearch from "../components/NavbarSearch";
